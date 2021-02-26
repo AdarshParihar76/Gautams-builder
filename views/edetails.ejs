@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	
+	<div class="container border border-primary rounded px-1 mt-3" style="background-color: rgba(255,255,220,.8)">
+		<h1> Gautams Builder <br> <em id="and"> & </em> </br> <b>Vaishnavi</b> <img id="logo" src="logos/logo.png">ons. </h1>
+		<p id="tag"> ( WE MAKE YOUR DREAMS HOME ) </p>
+	</div>
+</div>
+
+<div class="container text-light mt-5 p-3 rounded" style="background-color: rgba(15,10,20,.7); text-align: center;">
+	<h2> Employees and asigned Party </h2>
+	<table class="border border-primary mx-auto my-4">
+		<tr>
+			<td class="border border-info p-2"> <strong> Employee </strong> </td>
+			<td class="p-2 border border-info"> <strong> Assigned Party </strong> </td>
+		</tr>
+		<% for(i=0; i<emp.length; i++){ %> 
+		<tr>
+			<td class="border border-info p-2 text-monospace"> <%= emp[i] %> </td>
+			<td class="p-2 text-monospace  border border-info"> <%= party[i] %> </td>
+		</tr>
+		<% } %>
+	</table>
+</div>
+
+<%- include("partials/footer") %>

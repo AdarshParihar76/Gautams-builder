@@ -1,0 +1,88 @@
+body	{
+
+}
+
+#logo	{
+	height: 7%;
+	width: 7%;
+	margin-bottom: 4%;
+}
+
+#and 	{
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+#tag 	{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#tabp	{
+	margin-top: 10%;
+	height: 80%;
+	width: 70%;
+}
+
+#tabe	{
+	margin-top: 10%;
+	height: 50%;
+	width: 100%;
+}
+
+h1:hover {
+	color: rgba(20,50,45,.7);
+}
+
+h3:hover {
+	color: rgba(20,50,45,.7);
+}
+
+input:hover {
+	background-color: rgb(30,60,100);
+	border-radius: 8px;
+	border-color: rgb(10,50,200);
+}
+
+.tb {
+	height: 5%;
+	width: 20%;
+}
+
+.home {
+	
+	background-image: url(https://iea.imgix.net/baf1e3a9-a015-4917-8206-021234e74453/matthew-hamilton-Ru3Ap8TNcsk-unsplash.jpg?auto=compress%2Cformat&fit=min&q=80&rect=1710%2C0%2C3648%2C3648) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 5s;
+
+	animation-name: animate;
+	animation-direction: alternate-reverse;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out; 
+}
+
+@keyframes animate {
+	0%{
+		background-image: url(https://www.ccsegarra.com/wp-content/uploads/2017/08/fghgfhgfhgfhfghgfhgfh-644x426.jpg);
+	}
+	20%{
+		background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_on_V6OtTh2QncyrEYlUvL_mR8PSlqR2UwA&usqp=CAU);
+	}
+	40%{
+		background-image: url(https://www.ibm.com/blogs/internet-of-things/wp-content/uploads/2019/02/leadspace_clairepenny.jpg);
+	}
+	60%{
+		background-image: url(https://www.planetorganics.com/wp-content/uploads/2018/10/metal-building-homes.jpg);
+	}
+	80%{
+		background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2d/Bispingen_verr%C3%BCcktes_Haus_auf_dem_Kopf.jpg);
+	}
+	100%{
+		background-image: url(https://i.pinimg.com/originals/01/24/9d/01249d8658cb3fa699be097541dd9e42.jpg);
+	}
+}

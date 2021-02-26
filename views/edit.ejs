@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	
+	<div class="container border border-primary rounded px-1 mt-3" style="background-color: rgba(255,255,220,.8)">
+		<h1> Gautams Builder <br> <em id="and"> & </em> </br> <b>Vaishnavi</b> <img id="logo" src="logos/logo.png">ons. </h1>
+		<p id="tag"> ( WE MAKE YOUR DREAMS HOME ) </p>
+	</div>
+</div>
+
+<div class="container text-light mt-5 p-3 rounded" style="background-color: rgba(15,10,20,.7); text-align: center;">
+	<form class="form-group text-light" action="/<%= b._id %>/rparty" method="post">
+		<h2> Fill the form </h2> 
+		<input class="form-control mt-2" type="text" value=<%= b.name %> name=b[name] >
+		<input class="form-control mt-2" type="text" value=<%= b.place %> name=b[place] >
+		<input class="form-control mt-2" type="text" value=<%= b.phone %> name=b[phone] >
+		<input class="form-control mt-2" type="text" value=<%= b.qa %> name=b[qa] >
+		<input class="form-control mt-2" type="number" placeholder="Assign a Sr. no." name=b[status] require="">
+		<input class="form-control mt-2" type="text" placeholder="Assign an Employee" name=b[emp] required="" >	
+
+		<button class="btn btn-success btn-lg mt-2"> Update </button> 
+	</form>
+</div>
+
+<%- include("partials/footer") %>

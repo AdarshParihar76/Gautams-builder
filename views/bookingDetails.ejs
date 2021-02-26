@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<div class="container border border-primary rounded px-1 mt-3" style="background-color: rgba(255,255,220,.8)">
+		<h1> Gautams Builder <br> <em id="and"> & </em> </br> <b>Vaishnavi</b> <img id="logo" src="logos/logo.png">ons. </h1>
+		<p id="tag"> ( WE MAKE YOUR DREAMS HOME ) </p>
+	</div>
+</div>
+
+	<div class="container text-light mt-5 p-3 rounded" style="background-color: rgba(15,10,20,.7)">
+		<h2> <%= b.name %> </h2>
+		<strong> Phone no. : </strong> <p><%= b.phone %> </p>
+		<strong> Question : </strong> <p><%= b.qa %> </p>
+		<strong> Place : </strong> <p><%= b.place %> </p>
+		<strong> Mail-address: </strong> <p><%= b.emp %> </p>
+	</div>
+
+	<a class="btn btn-success ml-4 mt-2" href="/<%= b._id %>/rparty"> Run it </a>
+	
+	<a class="btn btn-danger float-right mr-4 mt-2" href="/<%= b._id %>/deleteBooking"> Remove it </a>
+<%- include("partials/footer") %>
